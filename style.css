@@ -1,0 +1,67 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'roboto', sans-serif;
+}
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #1c1c1b;
+}
+span
+{
+    font-size: 2rem;
+    color: #fff;
+    font-weight: 900;
+    margin-right: 12px;
+}
+.smooth
+{
+    width: 12.5em;
+    color: #00b1d2;
+    font-size: 2rem;
+    font-weight: 900;
+    line-height: 1.5;
+    border-right: 3px solid;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 4s infinite,
+    blink .5s step-end infinite alternate-reverse,
+    hue_color 4s infinite alternate-reverse;
+    filter: hue-rotate(0deg);
+}
+@keyframes hue_color {
+    0%
+    {
+        filter: hue-rotate(180deg);
+    }
+    100%
+    {
+        filter: hue-rotate(360deg);
+    }
+}
+@keyframes typing {
+    0%
+    {
+        width: 0;
+    }
+    50%
+    {
+        width: 12.5em;
+    }
+    100%
+    {
+        width: 0;
+    }
+}
+@keyframes blink {
+    50%
+    {
+        border-color: transparent;
+    }
+}
